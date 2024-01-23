@@ -12,19 +12,43 @@
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: stretch; /* Changed to stretch to allow child elements to fill the width */
-            justify-content: flex-start; /* Align content to the top */
+            align-items: stretch; /* Ensures that child elements take full width */
+            justify-content: flex-start;
             min-height: 100vh;
         }
-        .header {
+        .header, .bottom-center, .bio-container {
             font-size: 20px;
             background-color: #FF6F61;
-            width: 100%; /* Ensure the header takes the full viewport width */
+            width: 100%; /* Ensures full width */
             padding: 10px 0;
-            text-align: center;
+            text-align: center; /* Centers text */
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-
+        .top-middle, .content-section, .bio {
+            margin-top: 20px;
+            padding: 0 20px; /* Side padding for text */
+            text-align: left; /* Left aligns the text */
+            max-width: 800px; /* Maximum width of the text */
+            margin-left: auto; /* Centers the text block horizontally */
+            margin-right: auto; /* Centers the text block horizontally */
+        }
+        .highlight {
+            color: #32CD32; /* Lime green color */
+            font-weight: bold;
+        }
+        a {
+            color: #FFD700; /* Gold color for links */
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        a:hover {
+            color: #ADFF2F; /* Green Yellow color on hover */
+            text-decoration: underline;
+        }
+        a:active {
+            color: #FF4500; /* Orange Red color when active */
+        }
+        /* Additional styles if needed */
         .top-container {
             display: flex;
             justify-content: space-around;
@@ -42,36 +66,17 @@
             text-align: center;
             padding: 0 20px; /* Adjust padding as needed */
         }
-        .content-section {
-            font-size: 20px;
-            margin: 20px 0;
-            padding: 0 20px;
-            text-align: center; /* Centering text for consistency */
+        .contact-image {
+            max-width: 50px; /* Example size, adjust as necessary */
+            margin-right: 10px; /* Add some space between the image and the text */
         }
-        .bio {
-            font-size: 18px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            padding: 0 20px;
-            line-height: 1.6;
-            text-align: justify;
-            max-width: 800px;
-        }
-        .highlight {
-            color: #32CD32; /* Lime green color */
-            font-weight: bold;
-        }
-        a {
-            color: #FFD700; /* Gold color for links */
-            text-decoration: none;
-            margin: 0 5px;
-        }
-        a:hover {
-            color: #ADFF2F; /* Green Yellow color on hover */
-            text-decoration: underline;
-        }
-        a:active {
-            color: #FF4500; /* Orange Red color when active */
+        .bio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF6F61;
+            width: 100%;
+            padding: 20px 0;
         }
     </style>
 </head>
@@ -94,11 +99,13 @@
                 <a href="https://www.linkedin.com/in/ram-c-sharma/">LinkedIn</a>
             </div>
         </div>
-        <img src="https://github.com/ramcsharma/bio/blob/main/Plant Communities_Sharma.jpg?raw=true" alt="Natural Landscape">
+        <img src="https://github.com/your_username/your_repository/blob/main/right_image.jpg?raw=true" alt="Natural Landscape">
     </div>
-    <div class="bio">
-        Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
+    <div class="bio-container">
+        <div class="bio">
+            Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
+        </div>
     </div>
-    <div class="bottom-center">Contact me: ramc_sharma@g-air.me</div>
+    <div class="bottom-center">Contact me: <img src="path_to_your_contact_image.jpg" alt="Contact Information" class="contact-image"></div>
 </body>
 </html>
