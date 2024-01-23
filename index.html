@@ -4,47 +4,64 @@
     <title>Dr. Ram C. Sharma</title>
     <style>
         body {
-            background-color: red;
+            background-color: #34568B; /* A more subtle blue shade */
             color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
-        .top-left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: small;
-            padding: 10px;
+        .header {
+            font-size: 20px;
+            background-color: #FF6F61; /* A contrasting coral color */
+            width: 100%;
+            padding: 10px 0;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         .top-middle {
-            font-size: 32px;
-        }
-        .center {
-            font-size: 24px;
-            margin-top: 50px;
-        }
-        .social-media {
-            font-size: 24px;
+            font-size: 28px;
             margin-top: 20px;
         }
+        .center {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .social-media {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         .bottom-right {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            font-size: small;
-            padding: 10px;
+            font-size: 16px;
+            margin-top: auto;
+            padding: 15px;
+            width: 100%;
+            background-color: #FF6F61;
+            text-align: right;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.3);
         }
         a {
             color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="top-left">Dr. Ram C. Sharma - Personal Homepage</div>
+    <div class="header">Dr. Ram C. Sharma - Personal Homepage</div>
     <div class="top-middle">
-        Dr. Ram C. Sharma (B.Sc./Ecology, M.S./Environment Systems, D.Sc./Remote Sensing)<br>
-        (Geospatial-science and AI Researcher (G-AIR))
+        Dr. Ram C. Sharma<br>
+        B.Sc./Ecology, M.S./Environmental Systems, D.Sc./Remote Sensing<br>
+        <span style="font-weight: bold;">Geospatial-Science and AI Researcher (G-AIR)</span>
     </div>
     <div class="center">
         For academic publication records, please visit:<br>
