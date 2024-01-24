@@ -17,20 +17,18 @@
             min-height: 100vh;
         }
         .header, .contact-info {
-        font-size: 20px;
-        background-color: #FF6F61;
-        width: 100%;
-        padding: 10px 0; /* Internal padding for spacing inside the header */
-        margin: 0; /* Removes any external margin */
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            font-size: 20px;
+            background-color: #FF6F61;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         .top-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            max-width: 1200px;
         }
         .top-container img {
             max-height: 150px;
@@ -48,22 +46,14 @@
             padding: 0 20px;
             text-align: center;
         }
-        .bio-container .bio {
-            font-size: 18px;
-            color: black;
- 	        background-color: #32CD32;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            padding: 0 20px;
-            line-height: 1.6;
+        .bio-container {
+            background-color: #ADD8E6;
+            padding: 20px;
             text-align: justify;
-            max-width: 800px;
-            margin-left: auto; /* Centers the text block horizontally */
-            margin-right: auto; /* Centers the text block horizontally */
-        }
         }
         .bio {
             font-size: 18px;
+            color: black;
             margin: auto;
             line-height: 1.6;
             max-width: 800px;
@@ -87,10 +77,11 @@
     </style>
 </head>
 <body>
+    <div class="header">Dr. Ram C. Sharma - Personal Homepage</div>
+
     <div class="top-container">
         <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/PA140171.JPG" alt="Left Image">
         <div class="top-content">
-            <div class="header">Dr. Ram C. Sharma - Personal Homepage</div>
             Dr. Ram C. Sharma<br>
             B.Sc./Ecology, M.S./Environment Systems, D.Sc./Remote Sensing<br>
             <span class="highlight">Geospatial-science and AI Researcher (G-AIR)</span>
@@ -107,11 +98,13 @@
         </div>
         <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/Plant Communities_Sharma.jpg" alt="Right Image">
     </div>
+
     <div class="bio-container">
         <div class="bio">
             Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
         </div>
     </div>
+
     <div class="contact-info">
         Contact me at: ramc_sharma@g-air.me
     </div>
