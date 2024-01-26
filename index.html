@@ -29,20 +29,27 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
-        .top-container, .bio-container {
+        .top-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
             padding: 20px;
-            text-align: center;
+        }
+
+        .top-container img:first-child {
+            max-height: 100px;
         }
 
         .bio-container {
             background-color: #ADD8E6;
             color: black;
+            text-align: justify;
+            padding: 20px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
+        .contact-info {
+            padding: 2px 0;
         }
 
         a {
@@ -50,10 +57,12 @@
             text-decoration: none;
             margin: 0 5px;
         }
+
         a:hover {
             color: #ADFF2F;
             text-decoration: underline;
         }
+
         a:active {
             color: #FF4500;
         }
@@ -83,13 +92,11 @@
     </div>
 
     <div class="bio-container">
-        <div class="bio">
-           Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
-        </div>
+        Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
     </div>
 
     <div class="contact-info">
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/eMAIL4.png" alt="Contact Email" style="max-width: 40%; max-height: 25px">
+        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/eMAIL4.png" alt="Contact Email" style="max-width: 40%; max-height: 25px;">
     </div>
 </body>
 </html>
