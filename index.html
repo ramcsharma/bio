@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-589XCMRXWH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-589XCMRXWH');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5827963565815624" crossorigin="anonymous"></script>
-    <title>Dr. Ram C. Sharma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ram C. Sharma - Personal Homepage</title>
     <style>
-        html, body {
-            height: 100%;
+        /* Reset some default styles */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #34568B;
             color: white;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden;
         }
 
+        /* Header */
         .header {
             background-color: #FF6F61;
             text-align: center;
@@ -30,101 +28,122 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
+        /* Top Container */
         .top-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 100%;
             padding: 20px;
-            flex-wrap: wrap; /* Allow the items to wrap if needed */
+            flex-wrap: wrap;
         }
 
-        .highlight {
-            color: lime; /* Lime color */
-            font-weight: bold; /* Bold text */
-            font-size: 24px; /* Larger font size */
-        }
-
-        .top-container img {
+        .profile-image, .plant-image {
             max-height: 200px;
             width: auto;
             margin: 10px;
         }
 
+        .top-content {
+            flex: 1;
+        }
+
+        .highlight {
+            color: lime;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Content Section */
+        .content-section {
+            margin-top: 20px;
+        }
+
+        .links {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .links li {
+            margin-bottom: 5px;
+        }
+
+        .links a {
+            color: #FFD700;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .links a:hover {
+            color: #ADFF2F;
+            text-decoration: underline;
+        }
+
+        .links a:active {
+            color: #FF4500;
+        }
+
+        /* Bio Container */
         .bio-container {
             background-color: #ADD8E6;
             color: black;
             text-align: justify;
             padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        .bio {
-            font-size: 18px;
-            color: black;
-            margin: auto;
-            line-height: 1.6;
-            max-width: 600px; /* Adjust the max-width as needed */
-        }
-
+        /* Contact Photo */
         .contact-photo {
-            width: 100%;
             text-align: center;
             padding: 5px 0;
         }
 
-        .contact-photo img {
+        .email-image {
             max-width: 40%;
             max-height: 25px;
-        }
-
-        a {
-            color: #FFD700;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        a:hover {
-            color: #ADFF2F;
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: #FF4500;
         }
     </style>
 </head>
 <body>
-    <div class="header">Dr. Ram C. Sharma - Personal Homepage</div>
+    <header class="header">
+        Dr. Ram C. Sharma - Personal Homepage
+    </header>
 
     <div class="top-container">
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/PA140171.JPG" alt="Left Image">
+        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/PA140171.JPG" alt="Profile Image" class="profile-image">
         <div class="top-content">
-            Dr. Ram C. Sharma<br>
-            B.Sc./Ecology, M.S./Environment Systems, D.Sc./Remote Sensing<br>
-            <span class="highlight">Geospatial-science and AI Researcher (G-AIR)</span>
+            <h1>Dr. Ram C. Sharma</h1>
+            <p class="subtitle">B.Sc./Ecology, M.S./Environment Systems, D.Sc./Remote Sensing</p>
+            <p class="highlight">Geospatial-science and AI Researcher (G-AIR)</p>
             <div class="content-section">
-                For academic publication records, please visit:<br>
-                <a href="https://orcid.org/0000-0001-5706-4417">ORCID</a> |
-                <a href="https://scholar.google.co.jp/citations?user=HmydFAgAAAAJ&hl=en">Google Scholar</a> |
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=55535852500">Scopus</a> |
-                <a href="https://www.webofscience.com/wos/author/record/AAF-4117-2021">Web of Science</a>
-                <br><br>
-                Available at social media:<br>
-                <a href="https://jp.linkedin.com/in/ram-c-sharma">LinkedIn</a>
+                <p>For academic publication records, please visit:</p>
+                <ul class="links">
+                    <li><a href="https://orcid.org/0000-0001-5706-4417">ORCID</a></li>
+                    <li><a href="https://scholar.google.co.jp/citations?user=HmydFAgAAAAJ&hl=en">Google Scholar</a></li>
+                    <li><a href="https://www.scopus.com/authid/detail.uri?authorId=55535852500">Scopus</a></li>
+                    <li><a href="https://www.webofscience.com/wos/author/record/AAF-4117-2021">Web of Science</a></li>
+                </ul>
+                <p>Available on social media:</p>
+                <ul class="links">
+                    <li><a href="https://jp.linkedin.com/in/ram-c-sharma">LinkedIn</a></li>
+                </ul>
             </div>
         </div>
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/Plant Communities_Sharma.jpg" alt="Right Image">
+        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/Plant Communities_Sharma.jpg" alt="Plant Communities Image" class="plant-image">
     </div>
 
     <div class="bio-container">
-        Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
+        <p>
+            Dr. Sharma, trained as an ecologist, has a diverse educational background, starting with a Bachelor of Science in Ecology. He furthered his expertise by earning a Master of Science in Environment Systems, specializing in environmental systems and modeling. His academic journey culminated in a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences have honed his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing and applying large-scale geospatial applications with machine learning. He is recognized for his deep understanding of ecological systems and their dynamics through the analysis of data from multiple satellite technologies. His work addresses critical ecological challenges and environmental pressures faced by humanity.
+        </p>
     </div>
 
     <div class="contact-photo">
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/eMAIL4.png" alt="Contact Email">
+        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/eMAIL4.png" alt="Contact Email" class="email-image">
     </div>
 </body>
 </html>
