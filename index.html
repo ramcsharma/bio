@@ -20,9 +20,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #34568B;
             color: white;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        .header, .contact-info {
+        .header {
             background-color: #FF6F61;
             text-align: center;
             padding: 10px 0;
@@ -35,10 +36,11 @@
             align-items: center;
             width: 100%;
             padding: 20px;
+            flex-wrap: wrap; /* Allow the items to wrap if needed */
         }
 
         .top-container img {
-            max-height: 200px; /* Increased size of images */
+            max-height: 200px;
             width: auto;
             margin: 10px;
         }
@@ -48,17 +50,24 @@
             color: black;
             text-align: justify;
             padding: 20px;
-            display: flex; /* Added for centering the bio */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .bio {
-            max-width: 800px; /* Maximum width for bio */
+            max-width: 800px;
         }
 
-        .contact-info {
-            padding: 2px 0;
+        .contact-photo {
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .contact-photo img {
+            max-width: 40%;
+            max-height: 25px;
         }
 
         a {
@@ -81,33 +90,15 @@
     <div class="header">Dr. Ram C. Sharma - Personal Homepage</div>
 
     <div class="top-container">
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/PA140171.JPG" alt="Left Image">
-        <div class="top-content">
-            Dr. Ram C. Sharma<br>
-            B.Sc./Ecology, M.S./Environment Systems, D.Sc./Remote Sensing<br>
-            <span class="highlight">Geospatial-science and AI Researcher (G-AIR)</span>
-            <div class="content-section">
-                For academic publication records, please visit:<br>
-                <a href="https://orcid.org/0000-0001-5706-4417">ORCID</a> |
-                <a href="https://scholar.google.co.jp/citations?user=HmydFAgAAAAJ&hl=en">Google Scholar</a> |
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=55535852500">Scopus</a> |
-                <a href="https://www.webofscience.com/wos/author/record/AAF-4117-2021">Web of Science</a>
-                <br><br>
-                Available at social media:<br>
-                <a href="https://jp.linkedin.com/in/ram-c-sharma">LinkedIn</a>
-            </div>
-        </div>
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/Plant Communities_Sharma.jpg" alt="Right Image">
+        <!-- Images and Content Here -->
     </div>
 
     <div class="bio-container">
-        <div class="bio">
-            Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
-        </div>
+        Dr. Sharma, trained as an ecologist, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology. Advancing his expertise, he earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Sciences/Biosphere, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive academic experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
     </div>
 
-    <div class="contact-info">
-        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/eMAIL4.png" alt="Contact Email" style="max-width: 40%; max-height: 25px;">
+    <div class="contact-photo">
+        <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/eMAIL4.png" alt="Contact Email">
     </div>
 </body>
 </html>
