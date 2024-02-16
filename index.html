@@ -29,6 +29,9 @@
             color: #333;
             overflow-x: hidden;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         /* Header */
@@ -38,6 +41,7 @@
             text-align: center;
             padding: 15px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            width: 100%;
         }
 
         /* Top Container */
@@ -51,7 +55,7 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+            margin: 20px 0;
         }
 
         .profile-image, .plant-image {
@@ -76,41 +80,49 @@
             margin-bottom: 10px;
         }
 
-        /* Content Section */
-        .content-section {
-            margin-top: 20px;
+        /* Main Content */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px 0;
         }
 
-        .links {
-            list-style-type: none;
-            padding-left: 0;
+        /* Special Issues Section */
+        .special-issues {
+            flex: 1;
+            background-color: #F0F0F0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
         }
 
-        .links li {
+        .special-issues h2 {
+            margin-bottom: 10px;
+        }
+
+        .special-issues a {
+            color: #34568B;
+            text-decoration: none;
+            display: block;
             margin-bottom: 5px;
         }
 
-        .links a {
-            color: #34568B;
-            text-decoration: none;
-            margin-right: 5px;
-            font-weight: bold;
-        }
-
-        .links a:hover {
+        .special-issues a:hover {
             color: #FF6F61;
             text-decoration: underline;
         }
 
         /* Bio Container */
         .bio-container {
+            flex: 2;
             background-color: #F0F0F0;
             color: #333;
             text-align: justify;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
         }
 
         /* Contact Photo */
@@ -154,10 +166,19 @@
         <img src="https://raw.githubusercontent.com/ramcsharma/bio/main/Plant Communities_Sharma.jpg" alt="Plant Communities Image" class="plant-image">
     </div>
 
-    <div class="bio-container">
-        <p>
-            Dr. Sharma, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology, earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Science/Remote Sensing, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive research experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
-        </p>
+    <div class="main-content">
+        <div class="special-issues">
+            <h2>Special Issues Currently Open</h2>
+            <a href="https://www.mdpi.com/journal/ecologies/special_issues/VI2K4127UU">Ecologies Special Issue</a>
+            <a href="https://www.mdpi.com/journal/sensors/special_issues/E1OXVV689C">Sensors Special Issue</a>
+            <a href="https://www.mdpi.com/journal/applsci/special_issues/811GF10WN0">Applied Sciences Special Issue 1</a>
+            <a href="https://www.mdpi.com/journal/applsci/special_issues/Ecological_Applications_Remote_Sensing_Machine_Learning_Techniques">Applied Sciences Special Issue 2</a>
+        </div>
+        <div class="bio-container">
+            <p>
+                Dr. Sharma, with an academic career marked by a diverse educational background, starting with a Bachelor of Science in Ecology, earned a Master of Science in Environment Systems, specializing in environmental systems and modeling. His scholarly pursuit boosted as a Doctor of Science in Earth Science/Remote Sensing, where he developed expertise in satellite remote sensing and proximity sensing. Dr. Sharma's extensive research experiences further refined his proficiency, particularly in extracting biophysical parameters from the Earth's surface using satellite remote sensing, and in applying large-scale geospatial applications with machine learning. Recognized for his deep understanding of ecological systems and their dynamics through a big volume of data from multiple satellite technologies, his work addresses critical ecological challenges and environmental pressures faced by humanity.
+            </p>
+        </div>
     </div>
 
     <div class="contact-photo">
