@@ -1,6 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-589XCMRXWH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-589XCMRXWH');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5827963565815624" crossorigin="anonymous"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Ram C. Sharma - Personal Homepage - Greater Tokyo Area/Japan</title>
@@ -24,16 +35,18 @@
             align-items: center;
         }
 
+        /* Header */
         .header {
             background-color: #34568B;
             color: white;
             text-align: center;
             padding: 15px 0;
-            width: 100%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            width: 100%;
         }
 
-        .top-container, .main-content {
+        /* Top Container */
+        .top-container {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -46,52 +59,104 @@
             margin: 20px 0;
         }
 
-        .profile-image, .plant-image, .email-image {
+        .profile-image, .plant-image {
             max-height: 200px;
             width: auto;
             margin: 10px;
         }
 
-        .top-content, .special-issues, .bio-container, .contact-photo {
+        .top-content {
+            flex: 1;
             text-align: center;
+        }
+
+        .highlight {
+            color: lime;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        /* Special Issues Section */
+        .special-issues {
+            flex: 1;
+            background-color: #F0F0F0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .special-issues h2 {
+            margin-bottom: 10px;
+        }
+
+        .special-issues a {
+            color: #34568B;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .special-issues a:hover {
+            color: #FF6F61;
+            text-decoration: underline;
+        }
+
+        /* Bio Container */
+        .bio-container {
+            flex: 2;
+            background-color: #F0F0F0;
+            color: #333;
+            text-align: justify;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .highlight, .subtitle {
-            color: lime;
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 10px;
+        /* Contact Photo */
+        .contact-photo {
+            text-align: center;
+            padding: 5px 0;
         }
 
-        .special-issues, .bio-container {
-            background-color: #F0F0F0;
-            color: #333;
-            flex: 1;
-            margin: 10px;
+        .email-image {
+            max-width: 60%;
+            max-height: 45px;
+        }
+        
+        ul.links {
+            list-style-type: none;
         }
 
-        .academic-link {
-            color: #34568B; /* Unified link color */
-            text-decoration: none;
+        a {
+            color: blue; /* Change this to your desired color */
         }
 
-        .academic-link:hover {
-            color: #FF6F61;
-            text-decoration: underline;
-        }
-
+        /* Responsive design adjustments */
         @media (max-width: 768px) {
             .top-container, .main-content {
                 flex-direction: column;
                 align-items: center;
             }
+
             .special-issues, .bio-container {
                 width: 90%;
                 margin: 10px 0;
             }
+
             .top-content, .highlight, .subtitle {
                 font-size: smaller;
             }
@@ -112,15 +177,15 @@
             <div class="content-section">
                 <p>For academic publications, please visit:</p>
                 <ul class="links">
-                    <li><a href="https://orcid.org/0000-0001-5706-4417" class="academic-link">ORCID</a></li>
-                    <li><a href="https://scholar.google.co.jp/citations?user=HmydFAgAAAAJ&hl=en" class="academic-link">Google Scholar</a></li>
-                    <li><a href="https://www.scopus.com/authid/detail.uri?authorId=55535852500" class="academic-link">Scopus</a></li>
-                    <li><a href="https://www.webofscience.com/wos/author/record/AAF-4117-2021" class="academic-link">Web of Science</a></li>
-                    <li><a href="https://sciprofiles.com/profile/129969" class="academic-link">SciProfiles</a></li>
+                    <li><a href="https://orcid.org/0000-0001-5706-4417">ORCID</a></li>
+                    <li><a href="https://scholar.google.co.jp/citations?user=HmydFAgAAAAJ&hl=en">Google Scholar</a></li>
+                    <li><a href="https://www.scopus.com/authid/detail.uri?authorId=55535852500">Scopus</a></li>
+                    <li><a href="https://www.webofscience.com/wos/author/record/AAF-4117-2021">Web of Science</a></li>
+                    <li><a href="https://sciprofiles.com/profile/129969">SciProfiles</a></li>
                 </ul>
                 <p>Social media:</p>
                 <ul class="links">
-                    <li><a href="https://jp.linkedin.com/in/ram-c-sharma" class="academic-link">LinkedIn</a></li>
+                    <li><a href="https://jp.linkedin.com/in/ram-c-sharma">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -130,10 +195,10 @@
     <div class="main-content">
         <div class="special-issues">
             <h2>Special Issues Open</h2>
-            <a href="https://www.mdpi.com/journal/ecologies/special_issues/VI2K4127UU" class="academic-link">Ecologies Special Issue</a>
-            <a href="https://www.mdpi.com/journal/sensors/special_issues/E1OXVV689C" class="academic-link">Sensors Special Issue</a>
-            <a href="https://www.mdpi.com/journal/applsci/special_issues/811GF10WN0" class="academic-link">Applied Sciences Special Issue 1</a>
-            <a href="https://www.mdpi.com/journal/applsci/special_issues/Ecological_Applications_Remote_Sensing_Machine_Learning_Techniques" class="academic-link">Applied Sciences Special Issue 2</a>
+            <a href="https://www.mdpi.com/journal/ecologies/special_issues/VI2K4127UU">Ecologies Special Issue</a>
+            <a href="https://www.mdpi.com/journal/sensors/special_issues/E1OXVV689C">Sensors Special Issue</a>
+            <a href="https://www.mdpi.com/journal/applsci/special_issues/811GF10WN0">Applied Sciences Special Issue 1</a>
+            <a href="https://www.mdpi.com/journal/applsci/special_issues/Ecological_Applications_Remote_Sensing_Machine_Learning_Techniques">Applied Sciences Special Issue 2</a>
         </div>
         <div class="bio-container">
             <h2>Bio</h2><br>
