@@ -135,12 +135,30 @@
             max-width: 60%;
             max-height: 45px;
         }
+        
         ul.links {
-        list-style-type: none;
+            list-style-type: none;
         }
 
         a {
-        color: blue; /* Change this to your desired color */
+            color: blue; /* Change this to your desired color */
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .top-container, .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .special-issues, .bio-container {
+                width: 90%;
+                margin: 10px 0;
+            }
+
+            .top-content, .highlight, .subtitle {
+                font-size: smaller;
+            }
         }
     </style>
 </head>
